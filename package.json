@@ -1,0 +1,91 @@
+{
+  "name": "semgrep-browser",
+  "displayName": "Semgrep Browser",
+  "description": "Semgrep browser",
+  "version": "0.0.4",
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onView:semgrepExplorer",
+    "onCommand:semgrep-browser.readSemgrepJson",
+    "onCommand:semgrep-browser.startFindingsView"
+  ],
+  "main": "./out/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/doyensec/vsc-semgrep-browser"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "semgrep-browser.readSemgrepJson",
+        "title": "Read Semgrep Json"
+      },
+      {
+        "command": "semgrep-browser.startFindingsView",
+        "title": "Start Semgrep Findings View"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "semgrep-explorer",
+          "title": "Semgrep Explorer",
+          "icon": "media/loop.svg"
+        }
+      ]
+    },
+    "views": {
+      "semgrep-explorer": [
+        {
+          "id": "semgrepExplorer",
+          "name": "Semgrep Explorer",
+          "contextualTitle": "Explore Semgrep Findings"
+        }
+      ]
+    },
+    "viewsWelcome": [
+      {
+        "view": "semgrepExplorer",
+        "contents": "[Provide Semgrep Json File](command:semgrep-browser.readSemgrepJson)"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./ && browserify ./out/views/browserPanel/index.js > ./out/views/browserPanel/bundle.js && npm run copy-css",
+    "copy-css": "copyfiles src/css/*.css out/views/browserPanel -f",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@types/picomatch": "^2.3.0",
+    "@types/react-dom": "^18.0.6",
+    "@types/vscode": "^1.72.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.1",
+    "@typescript-eslint/parser": "^5.38.1",
+    "@vscode/test-electron": "^2.1.5",
+    "browserify": "^17.0.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.24.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.21",
+    "picomatch": "^2.3.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-multi-select-component": "^4.3.4"
+  }
+}

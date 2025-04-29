@@ -1,0 +1,43 @@
+.vscode-semgrep__finding-table {
+  border-collapse: collapse;
+  font-family: var(--vscode-font-family);
+}
+
+.vscode-semgrep__finding-table th {
+  background-color: var(--vscode-textCodeBlock-background);
+  border-top: 1px solid;
+  border-top-color: var(--vscode-input-border);
+  border-bottom: 1px solid;
+  border-bottom-color: var(--vscode-input-border);
+  padding: 0.3em;
+}
+
+.vscode-semgrep__finding-table td {
+  padding: 00.3em 0.5em;
+}
+
+.vscode-semgrep__finding-table-row-even {
+  background-color: var(--vscode-textBlockQuote-background);
+}
+
+.vscode-semgrep__finding-table-row-odd {
+  background-color: inherit;
+}
+
+.vscode-semgrep__filter-header {
+  padding: 0.5em 0;
+}
+
+.vscode-semgrep__filter-header input {
+  margin: 0 0.3em;
+  background-color: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+}
+
+.vscode-semgrep__multiselect div {
+  background-color: var(--vscode-dropdown-background) !important;
+}
+
+.vscode-semgrep__multiselect label {
+  background-color: var(--vscode-dropdown-background) !important;
+}
