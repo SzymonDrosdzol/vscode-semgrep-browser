@@ -1,33 +1,28 @@
 # README
 
-Semgrep Browser is a Visual Studio Code extension designed to help working with Semgrep findings. 
+Semgrep Browser is a Visual Studio Code extension designed to help you work with Semgrep findings. 
 
 ## Features
 
-The extension parses a semgrep scan result in JSON format and allows browsing and filtering the findings in a convenient VSCode view. Additionaly, it allows to quickly navigate to the vulnerable place in the code.
+The extension parses a Semgrep scan result in JSON format and allows browsing and filtering the findings in a convenient VS Code view. Additionally, it allows you to quickly navigate to the vulnerable place in the code.
 
 ## How to install
 
-Download the vsix file from the releases page and install it in VSCode.
+Download the vsix file from the releases page and install it in VS Code.
 
 ## How to use
 
-The extension introduces a command `Start Semgrep Findings View`. Use it to open a tab that allows to open and browse the findings in JSON file format.
+The extension introduces a command `Start Semgrep Findings View`. Use it to open a tab that allows you to open and browse the findings in JSON file format.
 
 ## Next steps
 
-Below's a list o possible expansions of the extension's capabilities:
+Below is a list of possible expansions of the extension's capabilities:
 
 - Setting status of findings.
-- More integration with VSCode:
-  - Scanning in background.
+- More integration with VS Code:
   - Inline findings.
 - Detailed view for each finding.
 - UI improvements (duh!).
-
-## Known issues
-
-- The left drawer button "Open Semgrep File" is broken. Use the command "Start Semgrep Findings View"
 
 ## Release notes
 
@@ -53,9 +48,9 @@ Initial release
 #### Bug fixes
 
 - Fixed the side-panel button "Provide Semgrep Json File"
-- Font color should now align with VSCode theme
-- The opened result file is preserved when user clicks away from the tab
-- The user can open other result file when one is already opened
+- Font color should now align with VS Code theme
+- The opened result file is preserved when the user clicks away from the tab
+- The user can open another result file when one is already opened
 
 #### Features
 
