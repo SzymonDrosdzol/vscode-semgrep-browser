@@ -8,7 +8,7 @@ The extension parses a semgrep scan result in JSON format and allows browsing an
 
 ## How to install
 
-Download the internal release version from https://github.com/doyensec/vsc-semgrep-browser/releases.
+Download the vsix file from the releases page and install it in VSCode.
 
 ## How to use
 
@@ -63,8 +63,6 @@ Initial release
 
 ## Credits 
 
-Created with ♥ by Doyensec
-
-Contact the author: szymon@doyensec.com
+Contact the author: szymon.drosdzol@gmail.com
 
 **Enjoy!**

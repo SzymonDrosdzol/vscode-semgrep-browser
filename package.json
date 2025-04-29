@@ -17,7 +17,7 @@
   "main": "./out/extension.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/doyensec/vsc-semgrep-browser"
+    "url": "https://github.com/SzymonDrosdzol/vscode-semgrep-browser"
   },
   "contributes": {
     "commands": [
