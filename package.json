@@ -4,7 +4,7 @@
   "description": "Semgrep browser",
   "version": "0.0.4",
   "engines": {
-    "vscode": "^1.72.0"
+    "vscode": "^1.99.1"
   },
   "categories": [
     "Other"
